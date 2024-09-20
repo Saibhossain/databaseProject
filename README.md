@@ -1,2 +1,2 @@
 # databaseProject
-hear is all database related code are available that i practice for database. all my database related projects including mysql,html,css,php.
+Here are all the database-related codes that I practice for the database. all my database-related projects including MySQL,html,css,php.
