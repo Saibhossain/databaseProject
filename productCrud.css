@@ -1,0 +1,136 @@
+
+/* General Body Styling */
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f7f7f7;
+    margin: 10;
+    padding: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170vh;
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 550px;
+    text-align: center;
+    margin-top: 50px; 
+}
+
+/* Title and Headings */
+h1 {
+    margin-top: 50px;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Form Styling */
+form {
+    margin-bottom: 20px;
+}
+
+/* Input Field Styling */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #009688;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 150, 136, 0.5);
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #009688;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00796b;
+}
+
+/* Form Button Styling */
+form button {
+    margin-top: 15px;
+}
+
+/* Styling the View Products Button */
+form:last-of-type button {
+    background-color: #2196F3;
+}
+
+form:last-of-type button:hover {
+    background-color: #1976d2;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    input[type="text"], input[type="number"], button {
+        font-size: 14px;
+    }
+}
+.logged {
+    font-size: 16px;
+    color: #f10404; /* Matches the button color */
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 10px;
+    margin-top: -40px; /* Adjust to bring it closer to the container */
+    padding: 5px;
+}
+
+.logged span {
+    color: #80f404; /* Default text color */
+}

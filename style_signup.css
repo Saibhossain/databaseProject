@@ -1,0 +1,121 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6f0ff; /* Light blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+/* Title Styling */
+h1 {
+  margin-bottom: 20px;
+  color: #0047ab; /* Blue title color */
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+/* Form Field Styling */
+.txt_field {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.txt_field input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #0047ab; /* Blue border */
+  border-radius: 5px;
+  background-color: #f0f8ff; /* Lighter blue for input background */
+  outline: none;
+  font-size: 16px;
+}
+
+.txt_field label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  color: #666;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+  top: -5px;
+  color: #0047ab;
+  font-size: 12px;
+}
+
+.txt_field span::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #0047ab;
+  transition: 0.5s;
+}
+
+.txt_field input:focus ~ span::before {
+  width: 100%;
+}
+
+/* Checkbox Styling */
+.txt_field input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+
+.txt_field label[for="is_admin"] {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #333;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0047ab; /* Blue button */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #003580; /* Darker blue on hover */
+}
+
+/* Signup Link Styling */
+.signup_link {
+  margin-top: 20px;
+  color: #333;
+}
+
+.signup_link a {
+  color: #0047ab;
+  text-decoration: none;
+}
+
+.signup_link a:hover {
+  text-decoration: underline;
+}

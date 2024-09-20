@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 50px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.txt_field {
+  position: relative;
+  margin: 30px 0;
+  border-bottom: 2px solid #fff;
+}
+
+.txt_field input {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 18px;
+}
+
+.txt_field label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  color: white;
+  transform: translateY(-50%);
+  font-size: 18px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+  top: -5px;
+  color: #ffcc00;
+}
+
+button {
+  background-color: #ffcc00;
+  border: none;
+  color: #2a5298;
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ffb700;
+}
+
+.pass {
+  margin: 10px 0;
+  color: #fff;
+}
+
+.signup_link {
+  margin-top: 20px;
+  color: white;
+}
+
+.signup_link a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.signup_link a:hover {
+  text-decoration: underline;
+}

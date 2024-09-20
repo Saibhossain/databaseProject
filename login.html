@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="center">
+          <h1>Login</h1>
+          <form action="crud.php" method="POST">
+              <div class="txt_field">
+                  <input type="text" name="email" required>
+                  <span></span>
+                  <label>Email</label>
+              </div>
+              <div class="txt_field">
+                  <input type="password" name="password" required>
+                  <span></span>
+                  <label>Password</label>
+              </div>
+              <div class="txt_field"></div>
+                <label>Admin</label>
+                <input type="checkbox" name="is_admin" value="1"> Check if Admin
+              </div>
+              <div class="pass">Forget Password?</div>
+                 <button type="submit" name="action" value="Login">Login to click</button>
+              <div class="signup_link">
+                  Not a Member ? <a href="signup.html">Signup</a>
+              </div>
+          </form>
+      </div>
+    </div>
+  </body>
+</html>
